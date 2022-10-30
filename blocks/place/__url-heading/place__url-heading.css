@@ -1,0 +1,12 @@
+.place__url-heading {
+    color: #aaa;
+
+    font-size: 12px;
+    line-height: 12px;
+
+    letter-spacing: .2em;
+}
+
+.place__url-heading::after {
+    content: "URL";
+}

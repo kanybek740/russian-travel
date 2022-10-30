@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    width: calc(100% - 48px*2);
+
+    padding: 92px 0 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 88px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding-top: 64px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: calc(768px + 48px*2)) {
+    /*
+      Согласен, намудрил с медиавыражениями) Но это сработало — отступы плавно изменяются при изменении размеров окна. Позже как-нибудь иначе это реализую
+    */
+    .footer {
+        max-width: calc(100% - 24px*2);
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: calc(424px + 24px*2)) {
+    .footer {
+        max-width: calc(100% - 16px*2);
+        width: 424px;
+    }
+}
